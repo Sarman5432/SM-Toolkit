@@ -1,0 +1,17 @@
+html body{
+  background-color: rgb(203, 252, 235);
+  margin: 0;
+  padding: 0;
+}
+
+header nav{
+  background-color: bisque;
+}
+
+section{
+  background-color: rgb(245, 116, 213);
+}
+
+footer{
+  background-color: coral;
+}
