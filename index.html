@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href='css/main.css'/>
-  <title>App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <title>Document</title>
 </head>
 <body>
   <header>
     <div id='top-logo'>
-      <p>LOGO</p>
+      <p>SM-Toolkit LOGO</p>
     </div>
     <nav>
       <div id='top-nav'>
@@ -19,11 +20,21 @@
       </div>
     </nav>
   </header>
-  <section id='main-screen'>
-    Main Body
-  </section>
-  <!-- <footer>
-    Footer
-  </footer> -->
+  <div id='main-screen'>
+    <div id="particles-js"></div>
+    <div class="page-wrap">
+      <p id='main-title'>SM-Toolkit</p>
+      <div id='searchbar'>
+        <input class='search-text' type="text" name="" placeholder="Type to Search"/>
+        <a class="search-btn" href='#'>
+          <img src='/public/icons/search.svg'/>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!--Scripts-->
+  <script src="js/particle/particle.js"></script>
+  <script src="js/particle/app.js"></script>
 </body>
 </html>
