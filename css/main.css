@@ -5,9 +5,32 @@ html body{
   padding: 0;
 }
 
+header{
+  display: flex;
+  margin: 10px 20px 10px 20px;
+}
+
 header nav{
   background-color: bisque;
+  padding: 10px;
+  flex-grow: 3;
+  max-width: 400px;
 }
+
+#top-nav{
+  display: flex;
+  justify-content: space-around;
+}
+
+#top-nav p{
+ 
+}
+
+#top-logo{
+  padding: 10px;
+  flex-grow: 2;
+}
+
 
 section{
   background-color: rgb(245, 116, 213);
@@ -16,3 +39,5 @@ section{
 footer{
   background-color: coral;
 }
+
+
