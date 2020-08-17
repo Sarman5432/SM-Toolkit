@@ -102,4 +102,36 @@ header nav{
   position: relative;
 }
 
+#popular-tools{
+  position: absolute;
+  background-color: white;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 30%;
+}
 
+#popular-tools p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.pt-container{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.pt-container div{
+  min-width: 200px;
+  width: 20%;
+  background-color: #602080;
+  height: 90%;
+  border-radius: 20px;
+}
