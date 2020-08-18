@@ -4,26 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href='css/main.css'/>
+  <link rel="stylesheet" href='css/basic_calc.css'/>
   <title>Basic Calculator</title>
 </head>
 <body>
   <header>
-    <div id='top-logo'>
-      <p>LOGO</p>
-    </div>
+    <a id='top-logo'>
+      <img id="logo" src="public/icons/logo.png"/>
+    </a>
     <nav>
       <div id='top-nav'>
-        <p>Home</p>
-        <p>Utilities</p>  <!--Make this a dropdown later-->
-        <p>Contact</p>
+        <a href="" class="nav-link"><p>Home</p></a>
+        <a href="" class="nav-link"><p>Utilities</p></a>  <!--Make this a dropdown later-->
+        <a href="" class="nav-link"><p>Contact</p></a>
       </div>
     </nav>
   </header>
-  <section id='main-screen'>
-    Main Body
-  </section>
+  <div id='main-screen'>
+    <div id="particles-js"></div>
+    <div id='title'>
+      <p> Basic Calculator</p>
+    </div>
+      <div id="calc-body">
+          <form>
+            <input type="text" class="display">
+            <table class="table">
+              <tr>
+                <td><input type="button" value="1"></td>
+                <td><input type="button" value="7"></td>
+                <td><input type="button" value="8"></td>
+                <td><input type="button" value="9"></td>
+              </tr>
+              <tr>
+                <td><input type="button" value="1"></td>
+                <td><input type="button" value="4"></td>
+                <td><input type="button" value="5"></td>
+                <td><input type="button" value="6"></td>
+              </tr>
+              <tr>
+                <td><input type="button" value="1"></td>
+                <td><input type="button" value="1"></td>
+                <td><input type="button" value="2"></td>
+                <td><input type="button" value="3"></td>
+              </tr>
+              <tr>
+                <td><input type="button" value="-"></td>
+                <td><input type="button" value="."></td>
+                <td><input type="button" value="0"></td>
+                <td><input type="button" value="AC"></td>
+              </tr>
+              <tr>
+                <td><input type="button" value="1"></td>
+              </tr>
+            </table>
+          </form>
+      </div>
+  </div>
   <!-- <footer>
     Footer
   </footer> -->
+
+  <script src="js/particle/particle.js"></script>
+  <script src="js/particle/app.js"></script>
 </body>
 </html>
