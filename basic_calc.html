@@ -27,7 +27,7 @@
     </div>
       <div id="calc-body">
           <form>
-            <input type="text" class="display" readonly>
+            <input type="text" class="display">
             <table class="table">
               <tr>
                 <td><input type="button" value="x"></td>
@@ -51,11 +51,11 @@
                 <td><input type="button" value="-"></td>
                 <td><input type="button" value="."></td>
                 <td><input type="button" value="0"></td>
-                <td><input type="button" value="AC"></td>
+                <td><input type="button" value="AC" id="AC_btn"></td>
               </tr>
               <tr>
-                <td colspan="2"><input style="width: 93%;" type="button" value="DEL"></td>
-                <td colspan="2"><input style="width: 93%" type="button" value="ENTER"></td>
+                <td colspan="2"><input style="width: 93%;" type="button" value="DEL" id="del_btn"></td>
+                <td colspan="2"><input style="width: 93%" type="button" value="ENTER" id="enter_btn"></td>
               </tr>
             </table>
           </form>
