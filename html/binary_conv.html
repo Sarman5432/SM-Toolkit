@@ -36,22 +36,37 @@
     </nav>
   </header>
   <div id='main-screen'>
-    <div id="page-wrap">
-      <div id='3D-glow-container'>
-        <div class="dropdown">
-          <button id='binary_one' class="dropdown-btn">
-            <p>Binary</p>
-            <img src='/public/icons/down-arrow.svg' class="dropdown-arr">
-          </button>
-          <div id='bin-dropdown' class="dropdown-content">
-            <a href='#'>Binary</a>
-            <a href='#'>Decimal</a>
-            <a href='#'>Hexidecimal</a>
-          </div>
+    <div id='glow-container'>
+      <div class="dropdown">
+        <button id='binary_one' class="dropdown-btn">
+          <p>Binary</p>
+          <img src='/public/icons/down-arrow.svg' class="dropdown-arr">
+        </button>
+        <div id='bin-dropdown_1' class="dropdown-content">
+          <a href='#'>Binary</a>
+          <a href='#'>Decimal</a>
+          <a href='#'>Hexidecimal</a>
         </div>
       </div>
 
+      <input type='text' class="bin-input"/>
+
+      <div class="dropdown">
+        <button id='binary_two' class="dropdown-btn">
+          <p>Binary</p>
+          <img src='/public/icons/down-arrow.svg' class="dropdown-arr">
+        </button>
+        <div id='bin-dropdown_2' class="dropdown-content">
+          <a href='#'>Binary</a>
+          <a href='#'>Decimal</a>
+          <a href='#'>Hexidecimal</a>
+        </div>
+      </div>
+
+      <input type='text' class="bin-input"/>
+      <button class="main-btn">Calculate</button>
     </div>
+
   </div>
 
   <!--Scripts-->
