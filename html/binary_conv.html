@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, , shrink-to-fit=no">
+
+  <!--CSS Links-->
+  <link rel="stylesheet" href='/css/main.css' />
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <a id='top-logo'>
+      <img id="logo" src="../public/icons/logo.png" />
+    </a>
+    <nav>
+      <div id='top-nav'>
+        <a href="" class="nav-link">
+          <p>Home</p>
+        </a>
+        <a href="" class="nav-link">
+          <p>Utilities</p>
+        </a>
+        <!--Make this a dropdown later-->
+        <a href="" class="nav-link">
+          <p>Contact</p>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <div id='main-screen'>
+    <div id="page-wrap">
+      <div id='3D-glow-container'>
+        <div class="dropdown">
+          <button id='binary_one' class="dropdown-btn">
+            <p>Binary</p>
+            <img src='/public/icons/down-arrow.svg' class="dropdown-arr">
+          </button>
+          <div id='bin-dropdown' class="dropdown-content">
+            <a href='#'>Binary</a>
+            <a href='#'>Decimal</a>
+            <a href='#'>Hexidecimal</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--Scripts-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src='/js/componentLogic/dropdown.js' crossorigin="anonymous" />
+  </body>
+</html>
