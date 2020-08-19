@@ -39,32 +39,32 @@
     <div id='glow-container'>
       <div class="dropdown">
         <button id='binary_one' class="dropdown-btn">
-          <p>Binary</p>
+          <p class='drop_one_sel'>Binary</p>
           <img src='/public/icons/down-arrow.svg' class="dropdown-arr">
         </button>
         <div id='bin-dropdown_1' class="dropdown-content">
-          <a href='#'>Binary</a>
-          <a href='#'>Decimal</a>
-          <a href='#'>Hexidecimal</a>
+          <p>Binary</p>
+          <p>Decimal</p>
+          <p>Hexidecimal</p>
         </div>
       </div>
 
-      <input type='text' class="bin-input"/>
+      <input type='text' class="bin-input" id='1' />
 
       <div class="dropdown">
         <button id='binary_two' class="dropdown-btn">
-          <p>Binary</p>
+          <p class='drop_two_sel'>Decimal</p>
           <img src='/public/icons/down-arrow.svg' class="dropdown-arr">
         </button>
         <div id='bin-dropdown_2' class="dropdown-content">
-          <a href='#'>Binary</a>
-          <a href='#'>Decimal</a>
-          <a href='#'>Hexidecimal</a>
+          <p>Binary</p>
+          <p>Decimal</p>
+          <p>Hexidecimal</p>
         </div>
       </div>
 
-      <input type='text' class="bin-input"/>
-      <button class="main-btn">Calculate</button>
+      <input type='text' class="bin-input" id='2' disabled />
+      <button class="main-btn" id='bin-calc'>Calculate</button>
     </div>
 
   </div>
@@ -73,6 +73,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-  <script src='/js/componentLogic/dropdown.js' crossorigin="anonymous" />
+  <script src='/js/binary.js' crossorigin="anonymous" />
   </body>
 </html>

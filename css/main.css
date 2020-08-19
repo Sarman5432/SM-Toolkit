@@ -230,6 +230,19 @@ header nav{
   transform: translateY(-50%);
 }
 
+.dropdown-content p {
+  padding: 16px;
+  margin: 0;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+.dropdown-content p:hover {
+  cursor: pointer;
+  background-color: rgb(221, 219, 219);
+}
+
 
 #glow-container{
   position: absolute;
