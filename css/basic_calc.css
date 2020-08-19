@@ -11,9 +11,9 @@
 
   #calc-body{
       display: flex;
-      width: 40%;
+      width: 35%;
       height: 75%;
-      background-color: #b030b0;
+      background-color: #602080;
       margin: 0 auto;
       position: relative;
 
@@ -32,13 +32,15 @@
   }
 
   .display{
-      width: 500px;
+      width: 430px;
       height: 70px;
-      margin: 5% 9% ;
+      margin: 5% 10% ;
+      font-size: 2rem;
+      text-align: right;
   }
 
   .table {
-      margin: 0 20%;
+      margin: 0 17%;
 
   }
 
@@ -48,4 +50,6 @@
       margin-right: 14px;
       margin-bottom: 13px;
       font-size: 2rem;
+      border-radius: 20px;
+      border: none;
   }
