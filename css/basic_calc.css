@@ -79,6 +79,6 @@
   }
 
   .clicked{
-    border: 2px solid black;
+    border: 1px solid black;
     transform: scale(0.96);
   }
