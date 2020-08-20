@@ -1,6 +1,6 @@
 $("input[type = 'button']").on('click', function(){
     $(this).addClass("clicked");
-    $(this).removeClass("clicked");
+    $(this).addClass("clicked");
 
     var value = $(this).val();
     if(value == 'x'){
