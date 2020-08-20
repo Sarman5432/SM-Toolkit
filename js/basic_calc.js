@@ -1,8 +1,7 @@
 $("input[type = 'button']").on('click', function(){
     $(this).addClass("clicked");
-    setTimeout(function(){
-        $(this).removeClass("clicked");
-    }, 500);
+    $(this).removeClass("clicked");
+
     var value = $(this).val();
     if(value == 'x'){
         $(".display").val($(".display").val() + '*');    
