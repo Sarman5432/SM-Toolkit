@@ -24,30 +24,38 @@ $('#bin-calc').click(() => {
   const dropdown_1 = $('.drop_one_sel')[0].textContent.toLowerCase()
   const dropdown_2 = $('.drop_two_sel')[0].textContent.toLowerCase()
 
-  //TODO - Make it so they can't be equal
+  //TODO - Consider showing all of them at the same time to get rid of all the IF statements
   if(dropdown_1 == dropdown_2){ 
     $('#2.bin-input')[0].value = $('#1.bin-input')[0].value
 
   }else if(dropdown_1 == 'binary' && isBinary(input)) {
     if (dropdown_2 == 'decimal') {
       $('#2.bin-input')[0].value = binaryToDecimal(input)
+
     } else if (dropdown_2 == 'hexidecimal') {
       $('#2.bin-input')[0].value = binaryToHex(input)
+
     } 
   } else if (dropdown_1 == 'decimal' && isDecimal(input)) {
     if (dropdown_2 == 'binary') {
       $('#2.bin-input')[0].value = decimalToBinary(input)
+
     } else if (dropdown_2 == 'hexidecimal') {
       $('#2.bin-input')[0].value = binaryToHex(input)
+
     } 
   } else if (dropdown_1 == 'hexidecimal' && isHex(input)) {
     if (dropdown_2 == 'decimal') {
       $('#2.bin-input')[0].value = hexToDecimal(input)
+
     } else if (dropdown_2 == 'binary') {
       $('#2.bin-input')[0].value = hexToBinary(input)
+
     } 
   } else {
-    console.log('ERROR: dropdown selection error')
+    console.log('1')
+    global_popup('binary_msg_modal', 'System Error', 'Please input the correct format')
+    console.log('3')
   }
 })
 
@@ -116,18 +124,16 @@ hexToDecimal = (hex) => {
   return decimal
 }
 
-
-//TODO - Binary Input Checker
+// TESTS FOR CORRECT INPUT FORMAT
 isBinary = (input) => {
-  return true;
+  return /^[01]+$/.test(input)
 }
 
-//TODO - Decimal Input Checker
 isDecimal = (input) => {
-  return true;
+  return /^[0-9]+$/.test(input)  
 }
 
-//TODO - Hexidecimal Input Checker
 isHex = (input) => {
-  return true;
+  return /^[0-9A-F]+$/.test(input)
 }
+
