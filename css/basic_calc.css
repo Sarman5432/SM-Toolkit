@@ -16,6 +16,7 @@
       background-color: #602080;
       margin: 0 auto;
       position: relative;
+      border-radius: 10px;
 
   }
 
@@ -32,11 +33,17 @@
   }
 
   .display{
-      width: 430px;
+      width: 420px;
       height: 70px;
       margin: 5% 10% ;
-      font-size: 2rem;
+      font-size: 3rem;
       text-align: right;
+      background-color: #5c9637;
+      padding: 0 10px;
+  }
+
+  .display:focus{
+    outline: none;
   }
 
   .table {
@@ -52,4 +59,26 @@
       font-size: 2rem;
       border-radius: 20px;
       border: none;
+      font-weight: 600;
+  }
+
+  td input:focus{
+    outline: none;
+  }
+
+  #AC_btn {
+    background-color:#ff9933;
+  }
+
+  #del_btn {
+    background-color: #ff9933;
+  }
+
+  #enter_btn{
+    background-color: gray;
+  }
+
+  .clicked{
+    border: 1px solid black;
+    transform: scale(0.96);
   }
