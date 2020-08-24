@@ -11,24 +11,25 @@
 
   #calc-body{
       display: flex;
-      width: 35%;
-      height: 75%;
+      width: 530px;
+      height:550px;
       background-color: #602080;
       margin: 0 auto;
       position: relative;
       border-radius: 10px;
+      margin-bottom: 20px;
 
   }
 
   #main-screen{
     background-color: #202040;
-    height: 100%;
+    height: 110%;
   }
 
   #particles-js{
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     opacity: 0.7;
   }
 
@@ -66,19 +67,160 @@
     outline: none;
   }
 
-  #AC_btn {
+  #AC_btn, #del_btn  {
     background-color:#ff9933;
   }
 
-  #del_btn {
-    background-color: #ff9933;
+  #enter_btn {
+    background-color: gray;
+    width: 94%;
   }
 
-  #enter_btn{
-    background-color: gray;
+  #del_btn{
+    width: 94%;
   }
 
   .clicked{
     border: 1px solid black;
     transform: scale(0.96);
   }
+
+  /* Responsive design */
+  @media only screen and (max-width: 750px) {
+    #main-screen{
+      background-color: #202040;
+      height: 110%;
+    }  
+
+}
+
+@media only screen and (max-width: 560px){
+  #calc-body{
+    width: 450px;
+    height:500px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+  .display{
+    width: 350px;
+    height: 60px;
+    margin: 5% 10% ;
+    padding: 0 10px;
+    font-size: 2.7rem;
+  }
+  .table {
+    margin: 0 14%;
+
+  }
+
+  td input{
+    height: 65px;
+    width: 80px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    font-size: 2rem;
+    transform: scale(0.85);
+  }
+
+  #del_btn, #enter_btn  {
+    width: 100%;
+  }
+  .clicked{
+    transform: scale(0.80);
+  }
+  }
+
+@media only screen and (max-width: 460px){
+  #calc-body{
+    width: 360px;
+    height:450px;
+
+}
+
+  .display{
+    width: 290px;
+    height: 50px;
+    margin: 5% 7.5% ;
+    padding: 0 10px;
+    font-size: 2.3rem;
+  }
+  .table {
+    margin: 0 4%;
+
+  }
+
+  td input{
+    height: 65px;
+    width: 80px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-size: 2rem;
+    transform: scale(0.80);
+  }
+
+  .clicked{
+    transform: scale(0.75);
+  }
+
+}
+
+@media only screen and (max-width: 375px){
+  #calc-body{
+    width: 320px;
+    height:430px;
+
+}
+
+  .display{
+    width: 260px;
+    height: 45px;
+    margin: 5% 7.5% ;
+    padding: 0 8px;
+    font-size: 2.2rem;
+  }
+  .table {
+    margin: 0 4.5%;
+
+  }
+
+  td input{
+    height: 63px;
+    width: 70px;
+    transform: scale(0.75);
+  }
+  .clicked{
+    transform: scale(0.70);
+  }
+
+}
+
+@media only screen and (max-width: 330px){
+  #calc-body{
+    width: 300px;
+    height:420px;
+
+}
+
+  .display{
+    width: 240px;
+    height: 40px;
+    margin: 5% 7.5% ;
+    padding: 0 8px;
+  }
+  .table {
+    margin: 0 5%;
+
+  }
+
+  td input{
+    height: 60px;
+    width: 65px;
+    font-size: 2rem;
+    
+  }
+  #main-screen{
+    height: 110%;
+  }
+}
